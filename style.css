@@ -1,0 +1,166 @@
+/* Heading styles */
+.heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+	/* Adjust the height as needed */
+	background-color: #000000;
+}
+
+.heading h1 {
+	font-size: 32px;
+	color: white;
+	margin: 0;
+}
+
+.grid {
+	width: 300px;
+	height: 300px;
+	border: solid black 1px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+}
+
+.invader {
+	background-color: purple;
+	border-radius: 10px;
+}
+
+.shooter {
+	background-color: green;
+}
+
+.laser {
+	background-color: orange;
+}
+
+.boom {
+	background-color: red;
+}
+
+/* ---- reset ---- */
+body {
+	margin: 0;
+	font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+	display: block;
+	vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	/* background-image: url("https://img.freepik.com/premium-photo/glowing-shimmering-stars-space-abstract-background_250994-1378.jpg"); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+	background: #000022;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 80px;
+	color: #13e8e9;
+	font-size: 0.8em;
+	text-align: left;
+	text-indent: 4px;
+	line-height: 14px;
+	padding-bottom: 2px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.js-count-particles {
+	font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+	-webkit-user-select: none;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#stats {
+	border-radius: 3px 3px 0 0;
+	overflow: hidden;
+}
+
+.count-particles {
+	border-radius: 0 0 3px 3px;
+}
+
+/* Centered container */
+.centered-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* Particle.js container */
+#particles-js {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/* Game container */
+.game-container {
+	position: relative;
+	z-index: 1;
+}
+
+/* Results container at the bottom */
+.heading1 {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 10vh;
+	background-color: #000000;
+}
+
+.heading1 h1 {
+	font-size: 24px;
+	color: white;
+	margin: 0;
+	padding: 10px;
+}
+
+.shooter {
+	background-color: green;
+	transition: transform 0.2s ease-in-out;
+}
+
+/* Copyright notice */
+.copyrighet {
+	color: rgb(232, 203, 203);
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+}
